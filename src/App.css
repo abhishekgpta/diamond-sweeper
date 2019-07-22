@@ -1,4 +1,4 @@
-/*.App {
+.App {
   text-align: center;
 }
 
@@ -30,7 +30,7 @@
   to {
     transform: rotate(360deg);
   }
-}*/
+}
 
 body{
    box-sizing: border-box;
@@ -40,33 +40,21 @@ body{
     border: 0;
 }
 
-.container{
-/*    height: 400px;
-    width: 500px;
-    margin: 20px auto;
-    display: grid;
-    grid-template-columns: auto;
-    grid-template-rows: auto;*/
-}
 .gameContainer{
     display: grid;
     height: 400px;
     width: 500px;
     margin: 20px auto;
-    background-color: #fff;
     color: #fff;
     border: 1px solid #2c3e50;
     border-radius: 10px;
     grid-template-areas: none;
         box-sizing: border-box;
     grid-template: repeat(8, 1fr)/repeat(8, 1fr);
+    background: #c8d8e7; /* fallback for old browsers */
+    background: -webkit-linear-gradient(to left, #c8d8e7 , #FD746C); 
+    background: linear-gradient(to left, #c8d8e7 , #FD746C);
     
-/*display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    overflow: hidden;
-    justify-content: center;
-    color:#fff;*/
 }
 .boradcell {
     border: 1px solid #2c3e50;
@@ -80,8 +68,30 @@ body{
         display: flex;
     background: #fff;
     height: 12vh;*/
-        background-image: url("images/question.png");
+}
+.bordeCellClose{
+    background-image: url("images/question.png");
     background-position: center center;
     background-size: contain;
     background-repeat: no-repeat;
+}
+.bordeCellOpen{
+    background-image: url("images/cross.png");
+    background-position: center center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+.bordeCellDiamond{
+    background-image: url("images/diamond.png");
+    background-position: center center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+.gameResume{
+    position: absolute;
+    top: 36px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgb(255,255,255,0.8);
 }
