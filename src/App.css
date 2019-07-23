@@ -75,8 +75,10 @@ body{
     background-size: contain;
     background-repeat: no-repeat;
 }
-.bordeCellOpen{
-    background-image: url("images/cross.png");
+.bordeCellArrow{
+  height: 100%;
+  width: 100%;
+    background-image: url("images/arrow.png");
     background-position: center center;
     background-size: contain;
     background-repeat: no-repeat;
@@ -88,10 +90,11 @@ body{
     background-repeat: no-repeat;
 }
 .gameResume{
-    position: absolute;
-    top: 36px;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
     left: 0;
-    right: 0;
-    bottom: 0;
-    background: rgb(255,255,255,0.8);
+    background: rgb(255,255,255,0.9)
 }
+
